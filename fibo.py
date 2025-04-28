@@ -8,8 +8,11 @@ def recursive_nth_fibo(n):
 
 
 def main():
-    hodnota = recursive_nth_fibo(6)
-    print(hodnota)
+    inp = int(input('zadej misto: '))
+    n = recursive_nth_fibo(inp)
+    seq = [recursive_nth_fibo(num) for num in range(n-1)]
+    print(seq)
+
 
 
 if __name__ == "__main__":
